@@ -1,0 +1,175 @@
+/* Reset default browser styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Set font size and line height */
+html {
+	font-size: 16px;
+	line-height: 2;
+  font-family: 'Figtree', sans-serif;
+  font-style: normal;
+  height: 90%;
+}
+
+/* Style the container */
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+/* Style the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.return-button {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color:#FFFFFF;
+  border: 0.38px solid #E5E5EA;
+}
+
+.create-button {
+  color: #0986FB;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Style the h1 tag */
+h1 {
+	font-size: 24px;
+	margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+/* Style the anchor tag */
+a {
+	text-decoration: none;
+  color: #0986FB;
+}
+
+/* Style the main content */
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	margin-bottom: 1rem;
+}
+
+p.password-reset {
+  color: #BDBDC2;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Style the login form */
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 0.5rem;
+}
+
+/* Style the input form */
+input[type="password"],
+input[type="email"],
+input[type="username"] {
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0A0A5;
+  height: 49px;
+}
+
+button[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  height: 46px;
+}
+
+ /* Style the password input */
+ .input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-group input {
+  flex: 1;
+  height: 3.0rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.input-icon,
+.password-toggle {
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+
+}
+
+#password,
+#new-password,
+#confirm-password {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+}
+
+/* Style the split line */
+.split-line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.split-line:before,
+.split-line:after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #E2E2E7;
+}
+
+.split-line span {
+    padding: 0 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #E2E2E7;
+  }
+
+  /*style the footer*/
+  footer {
+    margin-top: 120px;
+    text-align: center;
+  }

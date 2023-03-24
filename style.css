@@ -90,7 +90,6 @@ label {
 }
 
 /* Style the input form */
-input[type="password"],
 input[type="email"],
 input[type="username"] {
 	padding: 0.5rem;
@@ -129,6 +128,7 @@ button[type="submit"] {
   border: 1px solid #ccc;
   border-radius: 0.25rem;
   padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .input-icon,
@@ -136,13 +136,11 @@ button[type="submit"] {
   position: absolute;
   right: 0.5rem;
   cursor: pointer;
-
 }
 
 #password,
 #new-password,
 #confirm-password {
-  width: 100%;
   padding: 10px 40px 10px 10px;
 }
 

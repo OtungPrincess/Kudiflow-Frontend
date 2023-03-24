@@ -90,7 +90,6 @@ label {
 }
 
 /* Style the input form */
-input[type="password"],
 input[type="email"],
 input[type="username"] {
 	padding: 0.5rem;

@@ -136,6 +136,7 @@ button[type="submit"] {
   position: absolute;
   right: 0.5rem;
   cursor: pointer;
+  top: 20%;
 }
 
 #password,

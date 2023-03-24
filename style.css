@@ -131,12 +131,11 @@ button[type="submit"] {
   margin-bottom: 0.5rem;
 }
 
-.input-icon,
-.password-toggle {
+.input-icon {
   position: absolute;
   right: 0.5rem;
   cursor: pointer;
-  top: 20%;
+  top: 23%;
 }
 
 #password,

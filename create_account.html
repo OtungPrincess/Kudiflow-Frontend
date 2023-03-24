@@ -3,14 +3,13 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sign up</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">      
+	<link rel="stylesheet" type="text/css" href="style.css">      
 </head>
 <body>
 	<div class="container">
 		<main>            
 			<section class="header">
-                <a href="#" class="return-button"><i class="fas fa-arrow-left"></i></a>
+                <a href="#" class="return-button"><img src="assets/images/arrow-left.svg" alt="arrow-left"></a>
 				<a href="index.html" class="create-button">Login to account</a>
 			</section>
 			<section>
@@ -23,7 +22,9 @@
 					<label for="password">Password</label>
                     <div class="input-group">
                         <input type="password" id="password" name="password" placeholder="Enter preferred password" required>
-                        <div class="password-toggle" onclick="togglePasswordVisibility()"><i class="fa fa-eye"></i></div>
+                        <div class="input-icon">
+							<img src="assets/images/eye-off.svg" alt="eye-off" id="password-icon">
+						</div>
                     </div>
                     <button type="submit" value="Create account" style="margin-top: 2rem;">Create account</button>
 				</form>

@@ -1,17 +1,16 @@
 //eye-icon script
+    const passwordField = document.getElementById("password");
+    const passwordIcon = document.getElementById("password-icon");
 
-    function togglePasswordVisibility() {
-        const passwordInput = document.getElementById("password");
-        const passwordToggle = document.querySelector(".password-toggle");
-  
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-            passwordToggle.innerHTML = '<i class="fa fa-eye-slash"></i>';
+    passwordIcon.addEventListener("click", function() {
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            passwordIcon.src = "assets/images/eye-open.svg";
         } else {
-            passwordInput.type = "password";
-            passwordToggle.innerHTML = '<i class="fa fa-eye"></i>';
+            passwordField.type = "password";
+            passwordIcon.src = "assets/images/eye-off.svg";
         }
-    }
+    });
 // return button script
     const backButton = document.querySelector('.return-button');
 

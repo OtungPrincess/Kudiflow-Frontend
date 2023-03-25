@@ -3,37 +3,66 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reset email</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/reset_password.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reset_password.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <main>
+    <main class="left">
+      <div class="container-left">
         <section class="header">
           <a href="#" class="return-button"
-            ><img src="assets/images/arrow-left.svg" alt="arrow-left"
+            ><img src="./assets/images/arrow-left.svg" alt="arrow-left"
           /></a>
-          <a href="index.html" class="create-button">Login to account</a>
+          <a href="/index.html" class="create-button">Login to account</a>
         </section>
-        <section>
-          <h1>Reset password</h1>
-          <p class="password-reset">
+        <section class="left-form">
+          <h1 class="second_big-tx">Reset password</h1>
+          <p class="second_sm-tx">
             Enter your email associated with your account and we will send a
             password reset link
           </p>
-          <form onsubmit="sendEmail">
+          <form>
             <label for="email">Email</label>
             <input
-              type="email"
+              type="password"
               id="email"
               name="email"
-              placeholder="eg.account@company.com"
+              placeholder="eg. account@company.com"
               required
             />
-            <button type="submit" value="">Send email</button>
+            <button type="submit" value="">Reset password</button>
           </form>
         </section>
-      </main>
-    </div>
+        <section class="split-line">
+          <span>OR</span>
+        </section>
+      </div>
+
+      <div class="kudi-logo">
+        <img src="assets/images/footer logo.svg" alt="logo" />
+        <img src="assets/images/kudiflow.svg" alt="kudiflow" />
+      </div>
+    </main>
+
+    <main class="right">
+      <nav class="top-right">
+        <ul>
+          <li><a href="/index.html">Login</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+        <button class="top-right-btn">
+          <a href="./create_account.html">Sign Up</a>
+        </button>
+      </nav>
+
+      <img src="./assets/images/mac-mockup.svg" alt="mac-laptop" />
+    </main>
     <script>
       const backButton = document.querySelector(".return-button");
 

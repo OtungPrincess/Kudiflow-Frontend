@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Reset email</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="container">
-		<main>            
-			<section class="header">
-                <a href="#" class="return-button"><img src="assets/images/arrow-left.svg" alt="arrow-left"></a>
-				<a href="index.html" class="create-button">Login to account</a>
-			</section>
-			<section>
-				<h1>Reset password</h1>
-                <p class="password-reset">Enter your email associated with your account and we will send a password reset link</p>
-				<form onsubmit="sendEmail">
-                    <label for="email">Email</label>
-					<input type="email" id="email" name="email" placeholder="eg.account@company.com" required>
-                    <button type="submit" value="">Send email</button>
-				</form>
-			</section>
-        </main>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset email</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <section class="header">
+          <a href="#" class="return-button"
+            ><img src="assets/images/arrow-left.svg" alt="arrow-left"
+          /></a>
+          <a href="index.html" class="create-button">Login to account</a>
+        </section>
+        <section>
+          <h1>Reset password</h1>
+          <p class="password-reset">
+            Enter your email associated with your account and we will send a
+            password reset link
+          </p>
+          <form onsubmit="sendEmail">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="eg.account@company.com"
+              required
+            />
+            <button type="submit" value="">Send email</button>
+          </form>
+        </section>
+      </main>
     </div>
-	<script>
-		const backButton = document.querySelector('.return-button');
+    <script>
+      const backButton = document.querySelector(".return-button");
 
-		backButton.addEventListener('click', () => {
-			window.history.back();
-		});
-	</script>
-    
-</body>
+      backButton.addEventListener("click", () => {
+        window.history.back();
+      });
+    </script>
+  </body>
 </html>

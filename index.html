@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
     <title>User Login</title>
   </head>
   <body>
@@ -42,16 +46,15 @@
                 placeholder="Enter preferred password"
                 required
               />
-              <div class="input-icon">
-                <img
-                  src="assets/images/eye-off.svg"
-                  alt="eye-off"
-                  id="password-icon"
-                />
-              </div>
+              <i class="ti ti-eye-off input-icon"></i>
             </div>
+            <div class="info-message error">
+              <i class="ti ti-x"></i>
+              <p>Incorrect email or password</p>
+            </div>
+
             <div class="forgot-tx">
-              <a href="./password_reset.html">Forgot password?</a>
+              <a href="./reset_email.html">Forgot password?</a>
             </div>
             <button type="submit" value="">Login</button>
           </form>
@@ -78,7 +81,7 @@
         </button>
       </nav>
 
-      <img src="./assets/images/mac-mockup.svg" alt="mac-laptop" />
+      <img src="./assets/images/mac-mock.png" alt="mac-laptop" />
     </main>
     <script src="script.js"></script>
   </body>

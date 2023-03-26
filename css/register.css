@@ -138,8 +138,8 @@ main.right {
 
 /* Style the h1 tag */
 .second_big-tx {
-  font-size: 24px;
-  line-height: 29px;
+  font-size: var(--font-std-24);
+  line-height: var(--font-std-29);
   margin-bottom: 1.0625rem;
   font-weight: 700;
 }
@@ -164,15 +164,18 @@ input:focus {
 }
 
 /* Style the password input */
-input[type="password"] {
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 .input-icon {
   position: absolute;
-  right: 1.7rem;
+  right: .5rem;
   cursor: pointer;
-  top: 40%;
+  top: 30%;
 }
 
 button[type="submit"] {
@@ -185,6 +188,7 @@ button[type="submit"] {
   font-weight: 600;
   height: 46px;
   margin-bottom: var(--font-std-39);
+  margin-top: var(--font-std-27);
 }
 
 /* Style the split line */
@@ -264,13 +268,6 @@ button[type="submit"] {
   .left-form {
     /* padding: 3.5rem 4rem; */
     width: 25vw;
-  }
-
-  input[type="password"] {
-    margin-bottom: 0;
-  }
-  .input-group {
-    margin-bottom: var(--font-std-30);
   }
 
   .split-line {

@@ -40,6 +40,7 @@
   --font-std-24: 1.5em;
   --font-std-27: 1.6875em;
   --font-std-28: 1.75em;
+  --font-std-29: 1.8125em;
   --font-std-30: 1.875em;
   --font-std-39: 2.4375em;
   --font-std-40: 2.5em;
@@ -133,25 +134,16 @@ main.right {
   font-weight: 400;
   text-decoration: none;
   width: 7.75rem;
+  cursor: pointer;
 }
 
 /* Style the h1 tag */
 .second_big-tx {
-  font-size: 24px;
-  line-height: 29px;
+  font-size: var(--font-std-24);
+  line-height: var(--font-std-29);
   margin-bottom: 1.0625rem;
   font-weight: 700;
 }
-
-p.password-reset {
-  color: #bdbdc2;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-/* Style the login form */
 
 /* Style the input form */
 input {
@@ -173,14 +165,16 @@ input:focus {
 }
 
 /* Style the password input */
-input[type="password"] {
-  /* margin-bottom: 14.; */
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 .input-icon {
   position: absolute;
-  right: 1.7rem;
+  right: .5rem;
   cursor: pointer;
   top: 30%;
 }
@@ -195,6 +189,7 @@ input[type="password"] {
   font-size: var(--font-std-15);
   font-weight: 400;
   color: var(--primary-blue);
+  cursor: pointer;
 }
 
 button[type="submit"] {
@@ -208,6 +203,7 @@ button[type="submit"] {
   height: 46px;
   margin-bottom: var(--font-std-39);
 }
+
 
 /* Style the split line */
 .split-line {

@@ -83,7 +83,7 @@ button {
   font-size: var(--font-std-14);
   line-height: var(--font-std-17);
   font-weight: 400;
-  color: #A0A0A5;
+  color: #a0a0a5;
 }
 
 /* Style the container */
@@ -138,8 +138,8 @@ main.right {
 
 /* Style the h1 tag */
 .second_big-tx {
-  font-size: 24px;
-  line-height: 29px;
+  font-size: var(--font-std-24);
+  line-height: var(--font-std-29);
   margin-bottom: 1.0625rem;
   font-weight: 700;
 }
@@ -164,26 +164,18 @@ input:focus {
 }
 
 /* Style the password input */
-input[type="password"] {
-  margin-bottom: var(--font-std-15);
-}
-
 .input-group {
-  position: relative;
+  width: 100%;
   display: flex;
-  align-items: center;
-  margin-bottom: var(--font-std-40);
-}
-
-.input-group input {
-  flex: 1;
+  flex-direction: column;
+  position: relative;
 }
 
 .input-icon {
   position: absolute;
-  right: 0.5rem;
+  right: .5rem;
   cursor: pointer;
-  top: 23%;
+  top: 30%;
 }
 
 button[type="submit"] {
@@ -196,6 +188,7 @@ button[type="submit"] {
   font-weight: 600;
   height: 46px;
   margin-bottom: var(--font-std-39);
+  margin-top: var(--font-std-27);
 }
 
 /* Style the split line */
@@ -228,6 +221,10 @@ button[type="submit"] {
   display: flex;
   align-items: center;
   gap: 0.4625em;
+}
+
+.kudi-logo img {
+  height: var(--font-std-20);
 }
 
 /* Desktop Styles */
@@ -273,13 +270,6 @@ button[type="submit"] {
     width: 25vw;
   }
 
-  input[type="password"] {
-    margin-bottom: 0;
-  }
-  .input-group {
-  margin-bottom: var(--font-std-30);
-  }
-
   .split-line {
     width: 25vw;
   }
@@ -292,6 +282,10 @@ button[type="submit"] {
     align-self: flex-start;
     line-height: var(--font-std-49);
     height: var(--font-std-49);
+  }
+
+  .kudi-logo img {
+    height: fit-content;
   }
 
   /* right side styles */

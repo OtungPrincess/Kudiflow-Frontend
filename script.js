@@ -1,14 +1,16 @@
 //eye-icon script
     const passwordField = document.getElementById("password");
-    const passwordIcon = document.getElementById("password-icon");
+    const iconEye = document.querySelector('.input-icon')
 
-    passwordIcon.addEventListener("click", function() {
+    iconEye.addEventListener("click", function() {
         if (passwordField.type === "password") {
             passwordField.type = "text";
-            passwordIcon.src = "assets/images/eye-open.svg";
+            iconEye.classList.remove("ti-eye-off");
+            iconEye.classList.add("ti-eye");
         } else {
             passwordField.type = "password";
-            passwordIcon.src = "assets/images/eye-off.svg";
+            iconEye.classList.remove("ti-eye");
+            iconEye.classList.add("ti-eye-off");
         }
     });
 // return button script

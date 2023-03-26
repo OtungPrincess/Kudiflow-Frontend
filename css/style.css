@@ -83,7 +83,7 @@ button {
   font-size: var(--font-std-14);
   line-height: var(--font-std-17);
   font-weight: 400;
-  color: #A0A0A5;
+  color: #a0a0a5;
 }
 
 /* Style the container */
@@ -174,28 +174,20 @@ input:focus {
 
 /* Style the password input */
 input[type="password"] {
-  margin-bottom: var(--font-std-15);
-}
-
-.input-group {
+  /* margin-bottom: 14.; */
   position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.input-group input {
-  flex: 1;
 }
 
 .input-icon {
   position: absolute;
-  right: 0.5rem;
+  right: 1.7rem;
   cursor: pointer;
-  top: 23%;
+  top: 30%;
 }
 
 /* Style the forgot password link */
 .forgot-tx {
+  margin-top: var(--font-std-4);
   margin-bottom: var(--font-std-27);
   line-height: var(--font-std-18);
 }
@@ -215,12 +207,6 @@ button[type="submit"] {
   font-weight: 600;
   height: 46px;
   margin-bottom: var(--font-std-39);
-}
-
-#password,
-#new-password,
-#confirm-password {
-  padding: 10px 40px 10px 10px;
 }
 
 /* Style the split line */
@@ -253,6 +239,10 @@ button[type="submit"] {
   display: flex;
   align-items: center;
   gap: 0.4625em;
+}
+
+.kudi-logo img {
+  height: var(--font-std-20);
 }
 
 /* Desktop Styles */
@@ -310,6 +300,10 @@ button[type="submit"] {
     align-self: flex-start;
     line-height: var(--font-std-49);
     height: var(--font-std-49);
+  }
+
+  .kudi-logo img {
+    height: fit-content;
   }
 
   /* right side styles */

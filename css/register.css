@@ -83,7 +83,7 @@ button {
   font-size: var(--font-std-14);
   line-height: var(--font-std-17);
   font-weight: 400;
-  color: #A0A0A5;
+  color: #a0a0a5;
 }
 
 /* Style the container */
@@ -165,25 +165,14 @@ input:focus {
 
 /* Style the password input */
 input[type="password"] {
-  margin-bottom: var(--font-std-15);
-}
-
-.input-group {
   position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--font-std-40);
-}
-
-.input-group input {
-  flex: 1;
 }
 
 .input-icon {
   position: absolute;
-  right: 0.5rem;
+  right: 1.7rem;
   cursor: pointer;
-  top: 23%;
+  top: 40%;
 }
 
 button[type="submit"] {
@@ -228,6 +217,10 @@ button[type="submit"] {
   display: flex;
   align-items: center;
   gap: 0.4625em;
+}
+
+.kudi-logo img {
+  height: var(--font-std-20);
 }
 
 /* Desktop Styles */
@@ -277,7 +270,7 @@ button[type="submit"] {
     margin-bottom: 0;
   }
   .input-group {
-  margin-bottom: var(--font-std-30);
+    margin-bottom: var(--font-std-30);
   }
 
   .split-line {
@@ -292,6 +285,10 @@ button[type="submit"] {
     align-self: flex-start;
     line-height: var(--font-std-49);
     height: var(--font-std-49);
+  }
+
+  .kudi-logo img {
+    height: fit-content;
   }
 
   /* right side styles */

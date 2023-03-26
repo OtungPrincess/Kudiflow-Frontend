@@ -25,7 +25,12 @@
   --bg-light-gray: #fbfbfb;
   --bg-gray-1e: #1e1e1e;
 
+  /* icon colors */
+  --icon-green: #34c759;
+  --icon-red: red;
+
   /* fonts */
+  --font-std-2: 0.125em;
   --font-std-4: 0.25em;
   --font-std-5: 0.3125em;
   --font-std-6: 0.375em;
@@ -158,6 +163,10 @@ input {
   outline: none;
 }
 
+input#password {
+  margin-bottom: var(--font-std-2);
+}
+
 input:focus {
   border: 0.5px solid var(--primary-blue);
   box-shadow: 0px 0px 0px 2.5px var(--input-light-gray);
@@ -173,9 +182,30 @@ input:focus {
 
 .input-icon {
   position: absolute;
-  right: .5rem;
+  right: 0.5rem;
   cursor: pointer;
   top: 30%;
+}
+
+.info-message {
+  display: flex;
+  align-items: center;
+  height: var(--font-std-18);
+  line-height: var(--font-std-18);
+  font-size: 0.8125rem;
+  gap: var(--font-std-10);
+}
+
+.error p {
+  color: var(--icon-red);
+}
+
+i.ti-x {
+  color: var(--icon-red);
+}
+
+.hidden {
+  display: none;
 }
 
 button[type="submit"] {
@@ -331,7 +361,7 @@ button[type="submit"] {
 
   .right img {
     height: 75vh;
-    width: 40vw;
+    width: 40vmax;
     margin-top: auto;
     align-self: flex-end;
   }

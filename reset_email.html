@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
   </head>
   <body>
     <main class="left">
@@ -30,12 +34,21 @@
           <form>
             <label for="email">Email</label>
             <input
-              type="password"
+              type="email"
               id="email"
               name="email"
               placeholder="eg. account@company.com"
               required
             />
+            <div class="info-message success">
+              <!-- <i class="ti ti-check"></i> -->
+              <img src="./assets/images/check-mark.svg" alt="check" />
+              <p>Email sent, check inbox</p>
+            </div>
+            <div class="info-message error hidden">
+              <i class="ti ti-x"></i>
+              <p>Email not registered</p>
+            </div>
             <button type="submit" value="">Reset password</button>
           </form>
         </section>
@@ -61,14 +74,8 @@
         </button>
       </nav>
 
-      <img src="./assets/images/mac-mockup.svg" alt="mac-laptop" />
+      <img src="./assets/images/mac-mock.png" alt="mac-laptop" />
     </main>
-    <script>
-      const backButton = document.querySelector(".return-button");
-
-      backButton.addEventListener("click", () => {
-        window.history.back();
-      });
-    </script>
+    <script src="./reset_kudi.js"></script>
   </body>
 </html>

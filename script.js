@@ -1,6 +1,6 @@
 //eye-icon script
     const passwordField = document.getElementById("password");
-    const iconEye = document.querySelector('.input-icon')
+    const iconEye = document.querySelector('.input-icon');
 
     iconEye.addEventListener("click", function() {
         if (passwordField.type === "password") {

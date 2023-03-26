@@ -28,12 +28,14 @@
   /* icon colors */
   --icon-green: #34c759;
   --icon-red: red;
+  --icon-gray: #48484a;
 
   /* fonts */
   --font-std-2: 0.125em;
   --font-std-4: 0.25em;
   --font-std-5: 0.3125em;
   --font-std-6: 0.375em;
+  --font-std-7: 0.4375em;
   --font-std-10: 0.625em;
   --font-std-12: 0.75em;
   --font-std-14: 0.875em;
@@ -185,6 +187,8 @@ input:focus {
   right: 0.5rem;
   cursor: pointer;
   top: 30%;
+  height: 0.75em;
+  color: var(--icon-gray);
 }
 
 .info-message {
@@ -193,7 +197,7 @@ input:focus {
   height: var(--font-std-18);
   line-height: var(--font-std-18);
   font-size: 0.8125rem;
-  gap: var(--font-std-10);
+  gap: var(--font-std-7);
 }
 
 .error p {
@@ -292,6 +296,7 @@ button[type="submit"] {
     margin: 0 10vw;
     border: 0.5px solid var(--border-light-gray);
     border-radius: var(--font-std-15);
+    box-shadow: 0px 0.4px 4px rgba(0, 0, 0, 0.07);
     order: 1;
   }
 
